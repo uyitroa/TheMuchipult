@@ -2,9 +2,11 @@ from graphics import *
 
 
 def WaitUntilClicked(window):
+		"""wait until player decide to 
+		fire the rock"""
 		decideToPull = False
 
-		while decideToPull == False:
+		while not decideToPull:
 			coordMouse = window.checkMouse()
 			
 			if coordMouse != None:
@@ -53,7 +55,7 @@ def main():
 	WaitUntilClicked(win)			
 	
 	while True:
-		xRock, yRock = pullSystem(rock,win)
+		xRock, yRock = pullSystem(rock,xRock,yRock,win)
 
 if __name__ == "__main__":
 	main()
