@@ -1,5 +1,6 @@
 import getAngleVelocity # <- my part
 import CalculateCatapults # <- your part
+from graphics import *
 
 def frames():
 	win = GraphWin("Catapult", 900, 600)
